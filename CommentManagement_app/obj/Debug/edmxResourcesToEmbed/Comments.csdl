@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GridView_ExamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tableComment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Post" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Admin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Like" Type="Int32" />
+    <Property Name="Dislike" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="GridView_ExamEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tableComments" EntityType="Self.tableComment" />
+  </EntityContainer>
+</Schema>

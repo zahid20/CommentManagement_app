@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GridView_ExamModelStoreContainer" CdmEntityContainer="GridView_ExamEntities2">
+    <EntitySetMapping Name="tableComments">
+      <EntityTypeMapping TypeName="GridView_ExamModel.tableComment">
+        <MappingFragment StoreEntitySet="tableComments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Like" ColumnName="Like" />
+          <ScalarProperty Name="Dislike" ColumnName="Dislike" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
